@@ -68,21 +68,21 @@ uvicorn main:app --reload
 
 The API will be available at http://127.0.0.1:8000.
 
-### Usage
-Navigate to the Swagger UI at http://127.0.0.1:8000/docs.
-Use the /upload endpoint to upload a PDF file (e.g., a research paper or manual).
-Use the /query endpoint to ask questions about the uploaded document.
+## Usage
+1. Navigate to the Swagger UI at http://127.0.0.1:8000/docs.
+2. Use the /upload endpoint to upload a PDF file (e.g., a research paper or manual).
+3. Use the /query endpoint to ask questions about the uploaded document.
 
-### Docker Deployment
+## Docker Deployment
 To build and run the application as a container:
 ```bash
 docker build -t rag-engine .
 docker run -p 8000:8000 rag-engine
 ```
 
-### Future Improvements
-Hybrid Search: Implementing BM25 keyword search alongside vector search for better retrieval accuracy.
-Multi-Modal Support: Adding support for image-based PDFs using LlaVa.
-Frontend: Building a simple Streamlit or React UI for easier interaction.
+## Future Improvements
+* Hybrid Search: Implementing BM25 keyword search alongside vector search for better retrieval accuracy.
+* Multi-Modal Support: Adding support for image-based PDFs using LlaVa.
+* Frontend: Building a simple Streamlit or React UI for easier interaction.
 
-Built by Lee Kuan Loong
+**Built by Lee Kuan Loong**
